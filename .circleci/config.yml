@@ -6,7 +6,7 @@ image_config: &image_config
 
   IMAGE_NAME: ruby-node
 
-  IMAGE_TAG: 2.6.5_13.5.0
+  IMAGE_TAG: 2.6.5_12.14.0
 
   # NOTE: if you're modifying this config.yml file manually
   # rather than using the included setup script,
@@ -17,7 +17,7 @@ image_config: &image_config
 
   RUBY_VERSION_NUM: 2.6.5
 
-  NODE_VERSION_NUM: 13.5.0
+  NODE_VERSION_NUM: 12.14.0
 
   PYTHON_VERSION_NUM: 2.7.16
 
@@ -54,7 +54,7 @@ jobs:
 
   test_image:
     docker:
-      - image: $DOCKER_USERNAME/ruby-node:2.6.5_13.5.0
+      - image: $DOCKER_USERNAME/ruby-node:2.6.5_12.14.0
         environment:
           <<: *image_config
 
